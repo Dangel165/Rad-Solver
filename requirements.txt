@@ -1,0 +1,2 @@
+# No required third-party dependencies.
+# Optional tools that improve manual follow-up: binwalk, exiftool, radare2, gdb, pwntools.

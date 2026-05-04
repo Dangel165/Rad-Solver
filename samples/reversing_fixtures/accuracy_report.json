@@ -1,0 +1,435 @@
+{
+  "total": 6,
+  "passed": 6,
+  "accuracy": 1.0,
+  "results": [
+    {
+      "name": "rev_ascii.exe",
+      "prompt": "reversing flag format: REV{} password",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 99.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "REV{plain_string_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_ascii.exe",
+          "value": "REV{plain_string_flag}",
+          "metadata": {
+            "prompt_keywords": [
+              "rev"
+            ]
+          }
+        },
+        {
+          "score": 41.0,
+          "category": "reversing",
+          "title": "program prompt strings",
+          "detail": "Enter password: | Wrong password!",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_ascii.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "password"
+            ]
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "forensics",
+          "title": "interesting string: password",
+          "detail": "Enter password: | Wrong password!",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_ascii.exe",
+          "value": null,
+          "metadata": {
+            "prompt_keywords": [
+              "password"
+            ]
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "reversing",
+          "title": "PE binary",
+          "detail": "Windows PE detected; inspect imports, resources, and strings in a disassembler.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_ascii.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PE executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_ascii.exe",
+          "value": null,
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "name": "rev_wide.exe",
+      "prompt": "reversing flag format: REV{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 99.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "REV{wide_string_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_wide.exe",
+          "value": "REV{wide_string_flag}",
+          "metadata": {
+            "prompt_keywords": [
+              "rev"
+            ]
+          }
+        },
+        {
+          "score": 41.0,
+          "category": "reversing",
+          "title": "program prompt strings",
+          "detail": "Correct! REV{wide_string_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_wide.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "rev"
+            ]
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "reversing",
+          "title": "PE binary",
+          "detail": "Windows PE detected; inspect imports, resources, and strings in a disassembler.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_wide.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PE executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_wide.exe",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 2.51 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_wide.exe",
+          "value": null,
+          "metadata": {
+            "entropy": 2.509,
+            "size": 96
+          }
+        }
+      ]
+    },
+    {
+      "name": "rev_xor.exe",
+      "prompt": "reversing xor encoded string",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 85.0,
+          "category": "crypto",
+          "title": "single-byte XOR candidate",
+          "detail": "flag{xor_hidden_reverse}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_xor.exe",
+          "value": "flag{xor_hidden_reverse}",
+          "metadata": {
+            "key_hex": "0x37",
+            "offset": 18,
+            "flags": [
+              "flag{xor_hidden_reverse}"
+            ],
+            "prompt_keywords": [
+              "xor"
+            ]
+          }
+        },
+        {
+          "score": 45.0,
+          "category": "crypto",
+          "title": "single-byte XOR candidate",
+          "detail": "zm7777777777777777flag{xor_hidden_reverse}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_xor.exe",
+          "value": null,
+          "metadata": {
+            "key_hex": "0x37",
+            "offset": 0,
+            "flags": [],
+            "prompt_keywords": [
+              "xor"
+            ]
+          }
+        },
+        {
+          "score": 35.0,
+          "category": "reversing",
+          "title": "PE binary",
+          "detail": "Windows PE detected; inspect imports, resources, and strings in a disassembler.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_xor.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "string"
+            ]
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PE executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_xor.exe",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.47 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_xor.exe",
+          "value": null,
+          "metadata": {
+            "entropy": 3.47,
+            "size": 42
+          }
+        }
+      ]
+    },
+    {
+      "name": "rev_custom_xor.exe",
+      "prompt": "reversing xor flag format: REV{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 88.0,
+          "category": "crypto",
+          "title": "single-byte XOR candidate",
+          "detail": "l{!!!!!!!!!!!!!!!!REV{custom_xor_reverse}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_custom_xor.exe",
+          "value": "REV{custom_xor_reverse}",
+          "metadata": {
+            "key_hex": "0x21",
+            "offset": 0,
+            "flags": [
+              "REV{custom_xor_reverse}"
+            ],
+            "prompt_keywords": [
+              "rev",
+              "xor"
+            ]
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "reversing",
+          "title": "PE binary",
+          "detail": "Windows PE detected; inspect imports, resources, and strings in a disassembler.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_custom_xor.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PE executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_custom_xor.exe",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.37 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_custom_xor.exe",
+          "value": null,
+          "metadata": {
+            "entropy": 3.37,
+            "size": 41
+          }
+        }
+      ]
+    },
+    {
+      "name": "rev_packed.exe",
+      "prompt": "reversing packed windows binary",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 50.0,
+          "category": "reversing",
+          "title": "packer hint",
+          "detail": "Found UPX0; unpacking may be required.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_packed.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 50.0,
+          "category": "reversing",
+          "title": "packer hint",
+          "detail": "Found UPX1; unpacking may be required.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_packed.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 47.0,
+          "category": "reversing",
+          "title": "pwn/reversing API hints",
+          "detail": "scanf, WinExec, CreateProcess",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_packed.exe",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "scanf",
+              "WinExec",
+              "CreateProcess"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "reversing"
+            ]
+          }
+        },
+        {
+          "score": 46.0,
+          "category": "pwn",
+          "title": "pwn dangerous functions",
+          "detail": "scanf, WinExec, CreateProcess",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_packed.exe",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "scanf",
+              "WinExec",
+              "CreateProcess"
+            ]
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "reversing",
+          "title": "program prompt strings",
+          "detail": "license serial wrong",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\rev_packed.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pwn_elf.bin",
+      "prompt": "pwn reversing",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 59.0,
+          "category": "pwn",
+          "title": "pwn dangerous functions",
+          "detail": "gets, system",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\pwn_elf.bin",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "gets",
+              "system"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 50.0,
+          "category": "reversing",
+          "title": "pwn/reversing API hints",
+          "detail": "gets, system",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\pwn_elf.bin",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "gets",
+              "system"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn",
+              "reversing"
+            ]
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "reversing",
+          "title": "program prompt strings",
+          "detail": "Enter input:",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\pwn_elf.bin",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "pwn",
+          "title": "ELF binary",
+          "detail": "Run checksec/gdb/radare2 locally for NX/PIE/RELRO/canary and control-flow analysis.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\pwn_elf.bin",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "ELF executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\reversing_fixtures\\generated\\pwn_elf.bin",
+          "value": null,
+          "metadata": {}
+        }
+      ]
+    }
+  ]
+}

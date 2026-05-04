@@ -1,0 +1,514 @@
+{
+  "total": 5,
+  "passed": 5,
+  "accuracy": 1.0,
+  "results": [
+    {
+      "name": "archive.zip",
+      "prompt": "forensics flag format: FORENSICS{} zip hidden",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 122.0,
+          "category": "forensics",
+          "title": "flag inside zip entry",
+          "detail": "hidden/flag.txt: FORENSICS{zip_entry_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\archive.zip",
+          "value": "FORENSICS{zip_entry_flag}",
+          "metadata": {
+            "entry": "hidden/flag.txt",
+            "offset": 0,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "hidden",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 116.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "FORENSICS{zip_entry_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\archive.zip",
+          "value": "FORENSICS{zip_entry_flag}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 54.0,
+          "category": "forensics",
+          "title": "interesting string: hidden",
+          "detail": "hidden/flag.txtFORENSICS{zip_entry_flag}PK | hidden/flag.txtPK",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\archive.zip",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "hidden",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 52.0,
+          "category": "forensics",
+          "title": "embedded zip entries",
+          "detail": "notes.txt, hidden/flag.txt",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\archive.zip",
+          "value": null,
+          "metadata": {
+            "count": 2,
+            "offset": 46,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "hidden",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 51.0,
+          "category": "forensics",
+          "title": "embedded file signature",
+          "detail": "ZIP archive signature at offset 46",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\archive.zip",
+          "value": null,
+          "metadata": {
+            "offset": 46,
+            "type": "ZIP archive",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 48.0,
+          "category": "forensics",
+          "title": "zip entries",
+          "detail": "notes.txt, hidden/flag.txt",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\archive.zip",
+          "value": null,
+          "metadata": {
+            "count": 2,
+            "offset": 0,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "hidden",
+              "zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "image.png",
+      "prompt": "forensics png secret flag format: FORENSICS{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 112.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "FORENSICS{png_text_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\image.png",
+          "value": "FORENSICS{png_text_flag}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "png"
+            ]
+          }
+        },
+        {
+          "score": 54.0,
+          "category": "forensics",
+          "title": "interesting string: secret",
+          "detail": "tEXtsecret=FORENSICS{png_text_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\image.png",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "png",
+              "secret"
+            ]
+          }
+        },
+        {
+          "score": 48.0,
+          "category": "forensics",
+          "title": "embedded file signature",
+          "detail": "ZIP archive signature at offset 75",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\image.png",
+          "value": null,
+          "metadata": {
+            "offset": 75,
+            "type": "ZIP archive",
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 47.0,
+          "category": "forensics",
+          "title": "PNG trailing data",
+          "detail": "152 bytes after parsed PNG chunks.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\image.png",
+          "value": null,
+          "metadata": {
+            "offset": 32,
+            "length": 152,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "png"
+            ]
+          }
+        },
+        {
+          "score": 46.0,
+          "category": "forensics",
+          "title": "embedded zip entries",
+          "detail": "a.txt",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\image.png",
+          "value": null,
+          "metadata": {
+            "count": 1,
+            "offset": 75,
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PNG image",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\image.png",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "png"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "doc.pdf",
+      "prompt": "forensics pdf hidden flag format: FORENSICS{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 119.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "FORENSICS{pdf_hidden_token}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\doc.pdf",
+          "value": "FORENSICS{pdf_hidden_token}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "hidden",
+              "pdf"
+            ]
+          }
+        },
+        {
+          "score": 111.0,
+          "category": "web",
+          "title": "flag in web/text content",
+          "detail": "FORENSICS{pdf_hidden_token}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\doc.pdf",
+          "value": "FORENSICS{pdf_hidden_token}",
+          "metadata": {
+            "prompt_keywords": [
+              "forensics",
+              "hidden",
+              "pdf"
+            ]
+          }
+        },
+        {
+          "score": 56.0,
+          "category": "pwn",
+          "title": "format string payload candidate",
+          "detail": "Starter payload to leak stack values in a CTF service.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\doc.pdf",
+          "value": "%p.%p.%p.%p.%p",
+          "metadata": {
+            "markers": [
+              "%p"
+            ]
+          }
+        },
+        {
+          "score": 54.0,
+          "category": "forensics",
+          "title": "interesting string: secret",
+          "detail": "%PDF-1.7\\n1 0 obj\\n<< /Secret (FORENSICS{pdf_hidden_token}) >>\\nendobj\\n%%EOF",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\doc.pdf",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "hidden",
+              "pdf"
+            ]
+          }
+        },
+        {
+          "score": 54.0,
+          "category": "forensics",
+          "title": "interesting string: token",
+          "detail": "%PDF-1.7\\n1 0 obj\\n<< /Secret (FORENSICS{pdf_hidden_token}) >>\\nendobj\\n%%EOF",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\doc.pdf",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "hidden",
+              "pdf"
+            ]
+          }
+        },
+        {
+          "score": 54.0,
+          "category": "forensics",
+          "title": "interesting string: hidden",
+          "detail": "%PDF-1.7\\n1 0 obj\\n<< /Secret (FORENSICS{pdf_hidden_token}) >>\\nendobj\\n%%EOF",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\doc.pdf",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "hidden",
+              "pdf"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "pwn_rop.bin",
+      "prompt": "pwn ret2win rop",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 74.0,
+          "category": "pwn",
+          "title": "pwn target candidate",
+          "detail": "Potential exploit target: ret2win",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\pwn_rop.bin",
+          "value": "ret2win",
+          "metadata": {
+            "marker": "ret2win",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn",
+              "ret2win"
+            ]
+          }
+        },
+        {
+          "score": 71.0,
+          "category": "pwn",
+          "title": "pwn target candidate",
+          "detail": "Potential exploit target: pop rdi",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\pwn_rop.bin",
+          "value": "pop rdi",
+          "metadata": {
+            "marker": "pop rdi",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 71.0,
+          "category": "pwn",
+          "title": "pwn target candidate",
+          "detail": "Potential exploit target: system('/bin/sh')",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\pwn_rop.bin",
+          "value": "system('/bin/sh')",
+          "metadata": {
+            "marker": "/bin/sh",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 59.0,
+          "category": "pwn",
+          "title": "pwn dangerous functions",
+          "detail": "gets, system",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\pwn_rop.bin",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "gets",
+              "system"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 58.0,
+          "category": "pwn",
+          "title": "pwn exploitation hints",
+          "detail": "ret2win, pop rdi, /bin/sh",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\pwn_rop.bin",
+          "value": null,
+          "metadata": {
+            "markers": [
+              "ret2win",
+              "pop rdi",
+              "/bin/sh"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn",
+              "ret2win"
+            ]
+          }
+        },
+        {
+          "score": 37.0,
+          "category": "reversing",
+          "title": "pwn/reversing API hints",
+          "detail": "gets, system",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\pwn_rop.bin",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "gets",
+              "system"
+            ],
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "format_string.bin",
+      "prompt": "pwn format string",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 69.0,
+          "category": "pwn",
+          "title": "format string payload candidate",
+          "detail": "Starter payload to leak stack values in a CTF service.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\format_string.bin",
+          "value": "%p.%p.%p.%p.%p",
+          "metadata": {
+            "markers": [
+              "%p",
+              "%n",
+              "printf(user"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "string"
+            ]
+          }
+        },
+        {
+          "score": 57.0,
+          "category": "pwn",
+          "title": "format string hints",
+          "detail": "%p, %n, printf(user",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\format_string.bin",
+          "value": null,
+          "metadata": {
+            "markers": [
+              "%p",
+              "%n",
+              "printf(user"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "string"
+            ]
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "pwn",
+          "title": "ELF binary",
+          "detail": "Run checksec/gdb/radare2 locally for NX/PIE/RELRO/canary and control-flow analysis.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\format_string.bin",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 31.0,
+          "category": "reversing",
+          "title": "program prompt strings",
+          "detail": "Enter format:",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\format_string.bin",
+          "value": null,
+          "metadata": {
+            "prompt_keywords": [
+              "string"
+            ]
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "ELF executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\format_string.bin",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.69 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\forensics_pwn_fixtures\\generated\\format_string.bin",
+          "value": null,
+          "metadata": {
+            "entropy": 3.688,
+            "size": 66
+          }
+        }
+      ]
+    }
+  ]
+}

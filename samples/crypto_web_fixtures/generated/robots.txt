@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin
+//# sourceMappingURL=app.js.map
+?id=' union select password
+<script>alert(1)</script>

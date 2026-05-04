@@ -1,0 +1,444 @@
+{
+  "total": 6,
+  "passed": 6,
+  "accuracy": 1.0,
+  "results": [
+    {
+      "name": "base64.txt",
+      "prompt": "crypto base64",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 123.0,
+          "category": "crypto",
+          "title": "recursive decode flag",
+          "detail": "base64: flag{base64_crypto}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\base64.txt",
+          "value": "flag{base64_crypto}",
+          "metadata": {
+            "chain": [
+              "base64"
+            ],
+            "flags": [
+              "flag{base64_crypto}"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "base64",
+              "crypto"
+            ]
+          }
+        },
+        {
+          "score": 110.0,
+          "category": "crypto",
+          "title": "base64 decode",
+          "detail": "flag{base64_crypto}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\base64.txt",
+          "value": "flag{base64_crypto}",
+          "metadata": {
+            "flags": [
+              "flag{base64_crypto}"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "base64",
+              "crypto"
+            ]
+          }
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 4.31 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\base64.txt",
+          "value": null,
+          "metadata": {
+            "entropy": 4.307,
+            "size": 28
+          }
+        }
+      ]
+    },
+    {
+      "name": "base32.txt",
+      "prompt": "crypto base32",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 123.0,
+          "category": "crypto",
+          "title": "recursive decode flag",
+          "detail": "base32: flag{base32_crypto}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\base32.txt",
+          "value": "flag{base32_crypto}",
+          "metadata": {
+            "chain": [
+              "base32"
+            ],
+            "flags": [
+              "flag{base32_crypto}"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "base32",
+              "crypto"
+            ]
+          }
+        },
+        {
+          "score": 110.0,
+          "category": "crypto",
+          "title": "base32 decode",
+          "detail": "flag{base32_crypto}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\base32.txt",
+          "value": "flag{base32_crypto}",
+          "metadata": {
+            "flags": [
+              "flag{base32_crypto}"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "base32",
+              "crypto"
+            ]
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PE executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\base32.txt",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 22.0,
+          "category": "reversing",
+          "title": "PE binary",
+          "detail": "Windows PE detected; inspect imports, resources, and strings in a disassembler.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\base32.txt",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.99 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\base32.txt",
+          "value": null,
+          "metadata": {
+            "entropy": 3.989,
+            "size": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "rot13.txt",
+      "prompt": "crypto rot",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 86.0,
+          "category": "crypto",
+          "title": "ROT13 candidate",
+          "detail": "flag{rot_crypto}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\rot13.txt",
+          "value": "flag{rot_crypto}",
+          "metadata": {
+            "shift": 13,
+            "flags": [
+              "flag{rot_crypto}"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "crypto",
+              "rot"
+            ]
+          }
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.62 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\rot13.txt",
+          "value": null,
+          "metadata": {
+            "entropy": 3.625,
+            "size": 16
+          }
+        }
+      ]
+    },
+    {
+      "name": "jwt.html",
+      "prompt": "web jwt flag format: WEB{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 112.0,
+          "category": "web",
+          "title": "flag inside JWT",
+          "detail": "WEB{jwt_none_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\jwt.html",
+          "value": "WEB{jwt_none_flag}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "jwt",
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 68.0,
+          "category": "web",
+          "title": "JWT alg none hint",
+          "detail": "JWT header uses alg=none.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\jwt.html",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "jwt"
+            ]
+          }
+        },
+        {
+          "score": 60.0,
+          "category": "web",
+          "title": "XSS payload candidate",
+          "detail": "Basic reflected/stored XSS probe.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\jwt.html",
+          "value": "<script>alert(1)</script>",
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 56.0,
+          "category": "web",
+          "title": "JWT token",
+          "detail": "[{\"alg\": \"none\", \"typ\": \"JWT\"}, {\"role\": \"admin\", \"flag\": \"WEB{jwt_none_flag}\"}]",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\jwt.html",
+          "value": null,
+          "metadata": {
+            "token_prefix": "eyJhbGciOiAibm9uZSIsICJ0eXAiOiAi",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "jwt",
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 35.0,
+          "category": "forensics",
+          "title": "interesting string: token",
+          "detail": "<script>localStorage.token='eyJhbGciOiAibm9uZSIsICJ0eXAiOiAiSldUIn0.eyJyb2xlIjogImFkbWluIiwgImZsYWciOiAiV0VCe2p3dF9ub25lX2ZsYWd9In0.'</script>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\jwt.html",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 31.0,
+          "category": "web",
+          "title": "web keyword: xss",
+          "detail": "Keyword 'xss' appears in the content.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\jwt.html",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "web"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "index.html",
+      "prompt": "web flag format: WEB{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 115.0,
+          "category": "web",
+          "title": "flag in web/text content",
+          "detail": "WEB{comment_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\index.html",
+          "value": "WEB{comment_flag}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 103.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "WEB{comment_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\index.html",
+          "value": "WEB{comment_flag}",
+          "metadata": {
+            "prompt_keywords": [
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 60.0,
+          "category": "web",
+          "title": "XSS payload candidate",
+          "detail": "Basic reflected/stored XSS probe.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\index.html",
+          "value": "<script>alert(1)</script>",
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 45.0,
+          "category": "web",
+          "title": "comments",
+          "detail": "admin /hidden WEB{comment_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\index.html",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "forensics",
+          "title": "interesting string: hidden",
+          "detail": "<html><!-- admin /hidden WEB{comment_flag} --><script src='/static/app.js'></script></html>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\index.html",
+          "value": null,
+          "metadata": {
+            "prompt_keywords": [
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "forensics",
+          "title": "interesting string: admin",
+          "detail": "<html><!-- admin /hidden WEB{comment_flag} --><script src='/static/app.js'></script></html>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\index.html",
+          "value": null,
+          "metadata": {
+            "prompt_keywords": [
+              "web"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "robots.txt",
+      "prompt": "web sqli xss",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "top_findings": [
+        {
+          "score": 63.0,
+          "category": "web",
+          "title": "SQLi payload candidate",
+          "detail": "Login/auth bypass probe for CTF forms.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\robots.txt",
+          "value": "' OR '1'='1' -- ",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "sqli"
+            ]
+          }
+        },
+        {
+          "score": 63.0,
+          "category": "web",
+          "title": "SQLi payload candidate",
+          "detail": "Column-count probing starter payload.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\robots.txt",
+          "value": "' UNION SELECT NULL,NULL-- ",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "sqli"
+            ]
+          }
+        },
+        {
+          "score": 63.0,
+          "category": "web",
+          "title": "XSS payload candidate",
+          "detail": "Basic reflected/stored XSS probe.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\robots.txt",
+          "value": "<script>alert(1)</script>",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "xss"
+            ]
+          }
+        },
+        {
+          "score": 42.0,
+          "category": "web",
+          "title": "comments",
+          "detail": "# sourceMappingURL=app.js.map\\n?id=' union select password\\n<script>alert(1)</script>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\robots.txt",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 40.0,
+          "category": "web",
+          "title": "robots.txt hint",
+          "detail": "Detected markers: user-agent:, disallow:",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\robots.txt",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 40.0,
+          "category": "web",
+          "title": "source map hint",
+          "detail": "Detected markers: sourcemappingurl=, .map",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\crypto_web_fixtures\\generated\\robots.txt",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        }
+      ]
+    }
+  ]
+}

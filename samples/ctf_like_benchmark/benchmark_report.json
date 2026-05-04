@@ -1,0 +1,2438 @@
+{
+  "benchmark": "synthetic_ctf_like_v1",
+  "total": 25,
+  "passed": 25,
+  "accuracy": 1.0,
+  "category_scores": {
+    "crypto": {
+      "passed": 5,
+      "total": 5,
+      "accuracy": 1.0
+    },
+    "forensics": {
+      "passed": 5,
+      "total": 5,
+      "accuracy": 1.0
+    },
+    "pwn": {
+      "passed": 5,
+      "total": 5,
+      "accuracy": 1.0
+    },
+    "reversing": {
+      "passed": 5,
+      "total": 5,
+      "accuracy": 1.0
+    },
+    "web": {
+      "passed": 5,
+      "total": 5,
+      "accuracy": 1.0
+    }
+  },
+  "results": [
+    {
+      "category": "crypto",
+      "name": "crypto_base64.txt",
+      "prompt": "crypto base64",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "flag{ctf_like_base64}": 1
+      },
+      "top_findings": [
+        {
+          "score": 120.0,
+          "category": "crypto",
+          "title": "recursive decode flag",
+          "detail": "base64: flag{ctf_like_base64}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_base64.txt",
+          "value": "flag{ctf_like_base64}",
+          "metadata": {
+            "chain": [
+              "base64"
+            ],
+            "flags": [
+              "flag{ctf_like_base64}"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "base64"
+            ]
+          }
+        },
+        {
+          "score": 107.0,
+          "category": "crypto",
+          "title": "base64 decode",
+          "detail": "flag{ctf_like_base64}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_base64.txt",
+          "value": "flag{ctf_like_base64}",
+          "metadata": {
+            "flags": [
+              "flag{ctf_like_base64}"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "base64"
+            ]
+          }
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 4.16 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_base64.txt",
+          "value": null,
+          "metadata": {
+            "entropy": 4.164,
+            "size": 28
+          }
+        }
+      ]
+    },
+    {
+      "category": "crypto",
+      "name": "crypto_hex.txt",
+      "prompt": "crypto hex flag format: CRYPTO{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "CRYPTO{hex_ctf_like}": 1
+      },
+      "top_findings": [
+        {
+          "score": 123.0,
+          "category": "crypto",
+          "title": "recursive decode flag",
+          "detail": "hex: CRYPTO{hex_ctf_like}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_hex.txt",
+          "value": "CRYPTO{hex_ctf_like}",
+          "metadata": {
+            "chain": [
+              "hex"
+            ],
+            "flags": [
+              "CRYPTO{hex_ctf_like}"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "crypto",
+              "hex"
+            ]
+          }
+        },
+        {
+          "score": 110.0,
+          "category": "crypto",
+          "title": "hex decode",
+          "detail": "CRYPTO{hex_ctf_like}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_hex.txt",
+          "value": "CRYPTO{hex_ctf_like}",
+          "metadata": {
+            "flags": [
+              "CRYPTO{hex_ctf_like}"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "crypto",
+              "hex"
+            ]
+          }
+        },
+        {
+          "score": 28.0,
+          "category": "crypto",
+          "title": "hash-shaped value",
+          "detail": "Looks like SHA1-like. Offline cracking/dictionary lookup may be needed.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_hex.txt",
+          "value": null,
+          "metadata": {
+            "fingerprint": "74edae945abb",
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.29 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_hex.txt",
+          "value": null,
+          "metadata": {
+            "entropy": 3.29,
+            "size": 40
+          }
+        }
+      ]
+    },
+    {
+      "category": "crypto",
+      "name": "crypto_rot13.txt",
+      "prompt": "crypto caesar rot",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "flag{rot13_ctf_like}": 1
+      },
+      "top_findings": [
+        {
+          "score": 83.0,
+          "category": "crypto",
+          "title": "ROT13 candidate",
+          "detail": "flag{rot13_ctf_like}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_rot13.txt",
+          "value": "flag{rot13_ctf_like}",
+          "metadata": {
+            "shift": 13,
+            "flags": [
+              "flag{rot13_ctf_like}"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "rot"
+            ]
+          }
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.92 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_rot13.txt",
+          "value": null,
+          "metadata": {
+            "entropy": 3.922,
+            "size": 20
+          }
+        }
+      ]
+    },
+    {
+      "category": "crypto",
+      "name": "crypto_xor.bin",
+      "prompt": "crypto xor",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "flag{x0r_ctf_like}": 1
+      },
+      "top_findings": [
+        {
+          "score": 95.0,
+          "category": "crypto",
+          "title": "single-byte XOR candidate",
+          "detail": "flag{x0r_ctf_like}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_xor.bin",
+          "value": "flag{x0r_ctf_like}",
+          "metadata": {
+            "key_hex": "0x52",
+            "offset": 0,
+            "flags": [
+              "flag{x0r_ctf_like}"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "xor"
+            ]
+          }
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.84 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_xor.bin",
+          "value": null,
+          "metadata": {
+            "entropy": 3.837,
+            "size": 18
+          }
+        }
+      ]
+    },
+    {
+      "category": "crypto",
+      "name": "crypto_hash.txt",
+      "prompt": "crypto hash md5",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {},
+      "top_findings": [
+        {
+          "score": 34.0,
+          "category": "crypto",
+          "title": "hash-shaped value",
+          "detail": "Looks like MD5/NTLM-like. Offline cracking/dictionary lookup may be needed.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_hash.txt",
+          "value": null,
+          "metadata": {
+            "fingerprint": "4914e23374bb",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "hash",
+              "md5"
+            ]
+          }
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.48 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\crypto\\crypto_hash.txt",
+          "value": null,
+          "metadata": {
+            "entropy": 3.48,
+            "size": 32
+          }
+        }
+      ]
+    },
+    {
+      "category": "web",
+      "name": "web_comment.html",
+      "prompt": "web flag format: WEB{} hidden route",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "WEB{comment_route_flag}": 1
+      },
+      "top_findings": [
+        {
+          "score": 122.0,
+          "category": "web",
+          "title": "flag in web/text content",
+          "detail": "WEB{comment_route_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_comment.html",
+          "value": "WEB{comment_route_flag}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "route",
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 112.0,
+          "category": "forensics",
+          "title": "flag in text line",
+          "detail": "<html><!-- admin route /console WEB{comment_route_flag} --><a href='/console'>x</a></html>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_comment.html",
+          "value": "WEB{comment_route_flag}",
+          "metadata": {
+            "prompt_keywords": [
+              "route",
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 110.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "WEB{comment_route_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_comment.html",
+          "value": "WEB{comment_route_flag}",
+          "metadata": {
+            "prompt_keywords": [
+              "route",
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 48.0,
+          "category": "forensics",
+          "title": "interesting key-value",
+          "detail": "<html><!-- admin route /console WEB{comment_route_flag} --><a href='/console'>x</a></html>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_comment.html",
+          "value": "/console'>x</a></html>",
+          "metadata": {
+            "key": "<html><!-- admin route /console WEB{comment_route_flag} --><a href",
+            "prompt_keywords": [
+              "route",
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 48.0,
+          "category": "web",
+          "title": "comments",
+          "detail": "admin route /console WEB{comment_route_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_comment.html",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "route",
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 41.0,
+          "category": "forensics",
+          "title": "interesting string: admin",
+          "detail": "<html><!-- admin route /console WEB{comment_route_flag} --><a href='/console'>x</a></html>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_comment.html",
+          "value": null,
+          "metadata": {
+            "prompt_keywords": [
+              "route",
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 34.0,
+          "category": "web",
+          "title": "interesting paths",
+          "detail": "/console",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_comment.html",
+          "value": null,
+          "metadata": {
+            "count": 1,
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 31.0,
+          "category": "web",
+          "title": "web keyword: admin",
+          "detail": "Keyword 'admin' appears in the content.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_comment.html",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "web"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "category": "web",
+      "name": "web_jwt.html",
+      "prompt": "web jwt flag format: WEB{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "WEB{jwt_ctf_like}": 1
+      },
+      "top_findings": [
+        {
+          "score": 112.0,
+          "category": "web",
+          "title": "flag inside JWT",
+          "detail": "WEB{jwt_ctf_like}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_jwt.html",
+          "value": "WEB{jwt_ctf_like}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "jwt",
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 68.0,
+          "category": "web",
+          "title": "JWT alg none hint",
+          "detail": "JWT header uses alg=none.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_jwt.html",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "jwt"
+            ]
+          }
+        },
+        {
+          "score": 60.0,
+          "category": "web",
+          "title": "XSS payload candidate",
+          "detail": "Basic reflected/stored XSS probe.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_jwt.html",
+          "value": "<script>alert(1)</script>",
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 56.0,
+          "category": "web",
+          "title": "JWT token",
+          "detail": "[{\"alg\": \"none\", \"typ\": \"JWT\"}, {\"role\": \"admin\", \"flag\": \"WEB{jwt_ctf_like}\"}]",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_jwt.html",
+          "value": null,
+          "metadata": {
+            "token_prefix": "eyJhbGciOiAibm9uZSIsICJ0eXAiOiAi",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "jwt",
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 42.0,
+          "category": "forensics",
+          "title": "interesting key-value",
+          "detail": "<script>localStorage.token='eyJhbGciOiAibm9uZSIsICJ0eXAiOiAiSldUIn0.eyJyb2xlIjogImFkbWluIiwgImZsYWciOiAiV0VCe2p3dF9jdGZfbGlrZX0ifQ.'</script>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_jwt.html",
+          "value": "eyJhbGciOiAibm9uZSIsICJ0eXAiOiAiSldUIn0.eyJyb2xlIjogImFkbWluIiwgImZsYWciOiAiV0VCe2p3dF9jdGZfbGlrZX0ifQ.'</script>",
+          "metadata": {
+            "key": "<script>localStorage.token"
+          }
+        },
+        {
+          "score": 35.0,
+          "category": "forensics",
+          "title": "interesting string: token",
+          "detail": "<script>localStorage.token='eyJhbGciOiAibm9uZSIsICJ0eXAiOiAiSldUIn0.eyJyb2xlIjogImFkbWluIiwgImZsYWciOiAiV0VCe2p3dF9jdGZfbGlrZX0ifQ.'</script>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_jwt.html",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 31.0,
+          "category": "web",
+          "title": "web keyword: xss",
+          "detail": "Keyword 'xss' appears in the content.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_jwt.html",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 5.31 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_jwt.html",
+          "value": null,
+          "metadata": {
+            "entropy": 5.313,
+            "size": 141
+          }
+        }
+      ]
+    },
+    {
+      "category": "web",
+      "name": "web_static_hints.txt",
+      "prompt": "web sqli xss source map robots",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {},
+      "top_findings": [
+        {
+          "score": 63.0,
+          "category": "web",
+          "title": "SQLi payload candidate",
+          "detail": "Login/auth bypass probe for CTF forms.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_static_hints.txt",
+          "value": "' OR '1'='1' -- ",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "sqli"
+            ]
+          }
+        },
+        {
+          "score": 63.0,
+          "category": "web",
+          "title": "SQLi payload candidate",
+          "detail": "Column-count probing starter payload.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_static_hints.txt",
+          "value": "' UNION SELECT NULL,NULL-- ",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "sqli"
+            ]
+          }
+        },
+        {
+          "score": 63.0,
+          "category": "web",
+          "title": "XSS payload candidate",
+          "detail": "Basic reflected/stored XSS probe.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_static_hints.txt",
+          "value": "<script>alert(1)</script>",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "xss"
+            ]
+          }
+        },
+        {
+          "score": 48.0,
+          "category": "web",
+          "title": "comments",
+          "detail": "# sourceMappingURL=app.js.map\\n?id=' union select password\\n<script>alert(1)</script>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_static_hints.txt",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "map",
+              "source"
+            ]
+          }
+        },
+        {
+          "score": 46.0,
+          "category": "web",
+          "title": "source map hint",
+          "detail": "Detected markers: sourcemappingurl=, .map",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_static_hints.txt",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "map",
+              "source"
+            ]
+          }
+        },
+        {
+          "score": 43.0,
+          "category": "web",
+          "title": "robots.txt hint",
+          "detail": "Detected markers: user-agent:, disallow:",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_static_hints.txt",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "robots"
+            ]
+          }
+        },
+        {
+          "score": 42.0,
+          "category": "forensics",
+          "title": "interesting key-value",
+          "detail": "?id=' union select password",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_static_hints.txt",
+          "value": null,
+          "metadata": {
+            "key": "?id"
+          }
+        },
+        {
+          "score": 41.0,
+          "category": "forensics",
+          "title": "interesting string: password",
+          "detail": "User-agent: *\\nDisallow: /admin\\n//# sourceMappingURL=app.js.map\\n?id=' union select password\\n<script>alert(1)</script>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_static_hints.txt",
+          "value": null,
+          "metadata": {
+            "prompt_keywords": [
+              "map",
+              "source"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "category": "web",
+      "name": "web_js_encoded.html",
+      "prompt": "web javascript base64 flag format: WEB{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "WEB{js_base64_secret}": 1
+      },
+      "top_findings": [
+        {
+          "score": 112.0,
+          "category": "web",
+          "title": "decoded base64 string",
+          "detail": "WEB{js_base64_secret}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_js_encoded.html",
+          "value": "WEB{js_base64_secret}",
+          "metadata": {
+            "encoded_prefix": "V0VCe2pzX2Jhc2U2NF9zZWNyZXR9",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "base64",
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 112.0,
+          "category": "web",
+          "title": "decoded urlsafe base64 string",
+          "detail": "WEB{js_base64_secret}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_js_encoded.html",
+          "value": "WEB{js_base64_secret}",
+          "metadata": {
+            "encoded_prefix": "V0VCe2pzX2Jhc2U2NF9zZWNyZXR9",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "base64",
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 60.0,
+          "category": "web",
+          "title": "XSS payload candidate",
+          "detail": "Basic reflected/stored XSS probe.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_js_encoded.html",
+          "value": "<script>alert(1)</script>",
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 42.0,
+          "category": "forensics",
+          "title": "interesting key-value",
+          "detail": "<script>const secret='V0VCe2pzX2Jhc2U2NF9zZWNyZXR9'; fetch('/api/debug')</script>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_js_encoded.html",
+          "value": "V0VCe2pzX2Jhc2U2NF9zZWNyZXR9'; fetch('/api/debug')</script>",
+          "metadata": {
+            "key": "<script>const secret"
+          }
+        },
+        {
+          "score": 35.0,
+          "category": "forensics",
+          "title": "interesting string: secret",
+          "detail": "<script>const secret='V0VCe2pzX2Jhc2U2NF9zZWNyZXR9'; fetch('/api/debug')</script>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_js_encoded.html",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 34.0,
+          "category": "web",
+          "title": "interesting paths",
+          "detail": "/api/debug",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_js_encoded.html",
+          "value": null,
+          "metadata": {
+            "count": 1,
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 31.0,
+          "category": "web",
+          "title": "web keyword: debug",
+          "detail": "Keyword 'debug' appears in the content.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_js_encoded.html",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "web"
+            ]
+          }
+        },
+        {
+          "score": 31.0,
+          "category": "web",
+          "title": "web keyword: xss",
+          "detail": "Keyword 'xss' appears in the content.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_js_encoded.html",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "web"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "category": "web",
+      "name": "web_artifacts.html",
+      "prompt": "web backup graphql ssti",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {},
+      "top_findings": [
+        {
+          "score": 63.0,
+          "category": "web",
+          "title": "SSTI payload candidate",
+          "detail": "Template injection arithmetic probe.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_artifacts.html",
+          "value": "{{7*7}}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "ssti"
+            ]
+          }
+        },
+        {
+          "score": 43.0,
+          "category": "web",
+          "title": "backup file hint",
+          "detail": "Detected markers: .bak, backup",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_artifacts.html",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "backup"
+            ]
+          }
+        },
+        {
+          "score": 43.0,
+          "category": "web",
+          "title": "graphql hint",
+          "detail": "Detected markers: __schema",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_artifacts.html",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "graphql"
+            ]
+          }
+        },
+        {
+          "score": 43.0,
+          "category": "web",
+          "title": "ssti hint",
+          "detail": "Detected markers: {{",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_artifacts.html",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "ssti"
+            ]
+          }
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 4.62 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\web\\web_artifacts.html",
+          "value": null,
+          "metadata": {
+            "entropy": 4.624,
+            "size": 78
+          }
+        }
+      ]
+    },
+    {
+      "category": "forensics",
+      "name": "forensics_zip.zip",
+      "prompt": "forensics zip flag format: FORENSICS{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "FORENSICS{zip_ctf_like}": 1
+      },
+      "top_findings": [
+        {
+          "score": 119.0,
+          "category": "forensics",
+          "title": "flag inside zip entry",
+          "detail": "flag.txt: FORENSICS{zip_ctf_like}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_zip.zip",
+          "value": "FORENSICS{zip_ctf_like}",
+          "metadata": {
+            "entry": "flag.txt",
+            "offset": 0,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 116.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "FORENSICS{zip_ctf_like}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_zip.zip",
+          "value": "FORENSICS{zip_ctf_like}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 51.0,
+          "category": "forensics",
+          "title": "embedded file signature",
+          "detail": "ZIP archive signature at offset 51",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_zip.zip",
+          "value": null,
+          "metadata": {
+            "offset": 51,
+            "type": "ZIP archive",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 49.0,
+          "category": "forensics",
+          "title": "embedded zip entries",
+          "detail": "readme.txt, flag.txt",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_zip.zip",
+          "value": null,
+          "metadata": {
+            "count": 2,
+            "offset": 51,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 45.0,
+          "category": "forensics",
+          "title": "zip entries",
+          "detail": "readme.txt, flag.txt",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_zip.zip",
+          "value": null,
+          "metadata": {
+            "count": 2,
+            "offset": 0,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "ZIP archive",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_zip.zip",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 33.0,
+          "category": "forensics",
+          "title": "forensics next step",
+          "detail": "Try binwalk/exiftool/foremost/stegsolve equivalents if installed; embedded data or metadata may be present.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_zip.zip",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics"
+            ]
+          }
+        },
+        {
+          "score": 31.0,
+          "category": "forensics",
+          "title": "zip parse failed",
+          "detail": "ZIP header at offset 51 exists but archive could not be read. It may be encrypted, damaged, or intentionally malformed.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_zip.zip",
+          "value": null,
+          "metadata": {
+            "offset": 51,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "category": "forensics",
+      "name": "forensics_nested_zip.zip",
+      "prompt": "forensics nested zip flag format: FORENSICS{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "FORENSICS{nested_zip_flag}": 1
+      },
+      "top_findings": [
+        {
+          "score": 130.0,
+          "category": "forensics",
+          "title": "flag inside zip entry",
+          "detail": "deep/flag.txt: FORENSICS{nested_zip_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_nested_zip.zip!inner.zip",
+          "value": "FORENSICS{nested_zip_flag}",
+          "metadata": {
+            "entry": "deep/flag.txt",
+            "offset": 0,
+            "container_entry": "inner.zip",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "nested",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 126.0,
+          "category": "forensics",
+          "title": "flag inside zip entry",
+          "detail": "inner.zip: FORENSICS{nested_zip_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_nested_zip.zip",
+          "value": "FORENSICS{nested_zip_flag}",
+          "metadata": {
+            "entry": "inner.zip",
+            "offset": 0,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "nested",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 123.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "FORENSICS{nested_zip_flag}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_nested_zip.zip",
+          "value": "FORENSICS{nested_zip_flag}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "nested",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 51.0,
+          "category": "forensics",
+          "title": "embedded file signature",
+          "detail": "ZIP archive signature at offset 61",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_nested_zip.zip",
+          "value": null,
+          "metadata": {
+            "offset": 61,
+            "type": "ZIP archive",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 49.0,
+          "category": "forensics",
+          "title": "zip entries",
+          "detail": "deep/flag.txt",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_nested_zip.zip!inner.zip",
+          "value": null,
+          "metadata": {
+            "count": 1,
+            "offset": 0,
+            "container_entry": "inner.zip",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 49.0,
+          "category": "forensics",
+          "title": "embedded zip entries",
+          "detail": "outer.txt, inner.zip",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_nested_zip.zip",
+          "value": null,
+          "metadata": {
+            "count": 2,
+            "offset": 61,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 49.0,
+          "category": "forensics",
+          "title": "embedded zip entries",
+          "detail": "outer.txt, inner.zip",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_nested_zip.zip",
+          "value": null,
+          "metadata": {
+            "count": 2,
+            "offset": 100,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 45.0,
+          "category": "forensics",
+          "title": "zip entries",
+          "detail": "outer.txt, inner.zip",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_nested_zip.zip",
+          "value": null,
+          "metadata": {
+            "count": 2,
+            "offset": 0,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "category": "forensics",
+      "name": "forensics_png.png",
+      "prompt": "forensics png embedded zip flag format: FORENSICS{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "FORENSICS{png_appended_zip}": 1
+      },
+      "top_findings": [
+        {
+          "score": 125.0,
+          "category": "forensics",
+          "title": "flag inside embedded zip entry",
+          "detail": "secret.txt: FORENSICS{png_appended_zip}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_png.png",
+          "value": "FORENSICS{png_appended_zip}",
+          "metadata": {
+            "entry": "secret.txt",
+            "offset": 48,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "embedded",
+              "forensics",
+              "png",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 119.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "FORENSICS{png_appended_zip}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_png.png",
+          "value": "FORENSICS{png_appended_zip}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "png",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 54.0,
+          "category": "forensics",
+          "title": "embedded file signature",
+          "detail": "ZIP archive signature at offset 48",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_png.png",
+          "value": null,
+          "metadata": {
+            "offset": 48,
+            "type": "ZIP archive",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "embedded",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 54.0,
+          "category": "forensics",
+          "title": "interesting string: secret",
+          "detail": "secret.txtFORENSICS{png_appended_zip}PK | secret.txtPK",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_png.png",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "png",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 52.0,
+          "category": "forensics",
+          "title": "embedded zip entries",
+          "detail": "secret.txt",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_png.png",
+          "value": null,
+          "metadata": {
+            "count": 1,
+            "offset": 48,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "embedded",
+              "zip"
+            ]
+          }
+        },
+        {
+          "score": 47.0,
+          "category": "forensics",
+          "title": "PNG trailing data",
+          "detail": "137 bytes after parsed PNG chunks.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_png.png",
+          "value": null,
+          "metadata": {
+            "offset": 56,
+            "length": 137,
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "png"
+            ]
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PNG image",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_png.png",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "png"
+            ]
+          }
+        },
+        {
+          "score": 36.0,
+          "category": "forensics",
+          "title": "forensics next step",
+          "detail": "Try binwalk/exiftool/foremost/stegsolve equivalents if installed; embedded data or metadata may be present.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_png.png",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "embedded",
+              "forensics"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "category": "forensics",
+      "name": "forensics_pdf.pdf",
+      "prompt": "forensics pdf secret flag format: FORENSICS{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "FORENSICS{pdf_ctf_like}": 1
+      },
+      "top_findings": [
+        {
+          "score": 125.0,
+          "category": "forensics",
+          "title": "flag in text line",
+          "detail": "<< /Secret (FORENSICS{pdf_ctf_like}) >>",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_pdf.pdf",
+          "value": "FORENSICS{pdf_ctf_like}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "pdf",
+              "secret"
+            ]
+          }
+        },
+        {
+          "score": 120.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "FORENSICS{pdf_ctf_like}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_pdf.pdf",
+          "value": "FORENSICS{pdf_ctf_like}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "pdf"
+            ]
+          }
+        },
+        {
+          "score": 112.0,
+          "category": "web",
+          "title": "flag in web/text content",
+          "detail": "FORENSICS{pdf_ctf_like}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_pdf.pdf",
+          "value": "FORENSICS{pdf_ctf_like}",
+          "metadata": {
+            "prompt_keywords": [
+              "forensics",
+              "pdf"
+            ]
+          }
+        },
+        {
+          "score": 56.0,
+          "category": "pwn",
+          "title": "format string payload candidate",
+          "detail": "Starter payload to leak stack values in a CTF service.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_pdf.pdf",
+          "value": "%p.%p.%p.%p.%p",
+          "metadata": {
+            "markers": [
+              "%p"
+            ]
+          }
+        },
+        {
+          "score": 54.0,
+          "category": "forensics",
+          "title": "interesting string: secret",
+          "detail": "%PDF-1.7\\n<< /Secret (FORENSICS{pdf_ctf_like}) >>\\n%%EOF",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_pdf.pdf",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics",
+              "pdf",
+              "secret"
+            ]
+          }
+        },
+        {
+          "score": 44.0,
+          "category": "pwn",
+          "title": "format string hints",
+          "detail": "%p",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_pdf.pdf",
+          "value": null,
+          "metadata": {
+            "markers": [
+              "%p"
+            ]
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PDF document",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_pdf.pdf",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pdf"
+            ]
+          }
+        },
+        {
+          "score": 33.0,
+          "category": "forensics",
+          "title": "forensics next step",
+          "detail": "Try binwalk/exiftool/foremost/stegsolve equivalents if installed; embedded data or metadata may be present.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_pdf.pdf",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "category": "forensics",
+      "name": "forensics_wide.bin",
+      "prompt": "forensics unicode flag format: FORENSICS{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "FORENSICS{utf16_ctf_like}": 1
+      },
+      "top_findings": [
+        {
+          "score": 109.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "FORENSICS{utf16_ctf_like}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_wide.bin",
+          "value": "FORENSICS{utf16_ctf_like}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "forensics"
+            ]
+          }
+        },
+        {
+          "score": 18.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.48 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\forensics\\forensics_wide.bin",
+          "value": null,
+          "metadata": {
+            "entropy": 3.478,
+            "size": 57,
+            "prompt_boost": "category"
+          }
+        }
+      ]
+    },
+    {
+      "category": "pwn",
+      "name": "pwn_ret2win.bin",
+      "prompt": "pwn ret2win rop",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {},
+      "top_findings": [
+        {
+          "score": 74.0,
+          "category": "pwn",
+          "title": "pwn target candidate",
+          "detail": "Potential exploit target: ret2win",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_ret2win.bin",
+          "value": "ret2win",
+          "metadata": {
+            "marker": "ret2win",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn",
+              "ret2win"
+            ]
+          }
+        },
+        {
+          "score": 71.0,
+          "category": "pwn",
+          "title": "pwn target candidate",
+          "detail": "Potential exploit target: pop rdi",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_ret2win.bin",
+          "value": "pop rdi",
+          "metadata": {
+            "marker": "pop rdi",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 71.0,
+          "category": "pwn",
+          "title": "pwn target candidate",
+          "detail": "Potential exploit target: system('/bin/sh')",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_ret2win.bin",
+          "value": "system('/bin/sh')",
+          "metadata": {
+            "marker": "/bin/sh",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 59.0,
+          "category": "pwn",
+          "title": "pwn dangerous functions",
+          "detail": "gets, system",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_ret2win.bin",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "gets",
+              "system"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 58.0,
+          "category": "pwn",
+          "title": "pwn exploitation hints",
+          "detail": "ret2win, pop rdi, /bin/sh",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_ret2win.bin",
+          "value": null,
+          "metadata": {
+            "markers": [
+              "ret2win",
+              "pop rdi",
+              "/bin/sh"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn",
+              "ret2win"
+            ]
+          }
+        },
+        {
+          "score": 37.0,
+          "category": "reversing",
+          "title": "pwn/reversing API hints",
+          "detail": "gets, system",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_ret2win.bin",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "gets",
+              "system"
+            ],
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "pwn",
+          "title": "ELF binary",
+          "detail": "Run checksec/gdb/radare2 locally for NX/PIE/RELRO/canary and control-flow analysis.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_ret2win.bin",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 28.0,
+          "category": "reversing",
+          "title": "program prompt strings",
+          "detail": "Enter input:",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_ret2win.bin",
+          "value": null,
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "category": "pwn",
+      "name": "pwn_format.bin",
+      "prompt": "pwn format string",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {},
+      "top_findings": [
+        {
+          "score": 69.0,
+          "category": "pwn",
+          "title": "format string payload candidate",
+          "detail": "Starter payload to leak stack values in a CTF service.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_format.bin",
+          "value": "%p.%p.%p.%p.%p",
+          "metadata": {
+            "markers": [
+              "%p",
+              "%n",
+              "printf(user"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "string"
+            ]
+          }
+        },
+        {
+          "score": 57.0,
+          "category": "pwn",
+          "title": "format string hints",
+          "detail": "%p, %n, printf(user",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_format.bin",
+          "value": null,
+          "metadata": {
+            "markers": [
+              "%p",
+              "%n",
+              "printf(user"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "string"
+            ]
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "pwn",
+          "title": "ELF binary",
+          "detail": "Run checksec/gdb/radare2 locally for NX/PIE/RELRO/canary and control-flow analysis.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_format.bin",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 31.0,
+          "category": "reversing",
+          "title": "program prompt strings",
+          "detail": "Enter format:",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_format.bin",
+          "value": null,
+          "metadata": {
+            "prompt_keywords": [
+              "string"
+            ]
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "ELF executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_format.bin",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.69 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_format.bin",
+          "value": null,
+          "metadata": {
+            "entropy": 3.688,
+            "size": 66
+          }
+        }
+      ]
+    },
+    {
+      "category": "pwn",
+      "name": "pwn_shell.bin",
+      "prompt": "pwn shell system",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {},
+      "top_findings": [
+        {
+          "score": 74.0,
+          "category": "pwn",
+          "title": "pwn target candidate",
+          "detail": "Potential exploit target: system('/bin/sh')",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_shell.bin",
+          "value": "system('/bin/sh')",
+          "metadata": {
+            "marker": "/bin/sh",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn",
+              "system"
+            ]
+          }
+        },
+        {
+          "score": 71.0,
+          "category": "pwn",
+          "title": "pwn target candidate",
+          "detail": "Potential exploit target: mprotect",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_shell.bin",
+          "value": "mprotect",
+          "metadata": {
+            "marker": "mprotect",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 62.0,
+          "category": "pwn",
+          "title": "pwn dangerous functions",
+          "detail": "scanf, system",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_shell.bin",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "scanf",
+              "system"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn",
+              "system"
+            ]
+          }
+        },
+        {
+          "score": 55.0,
+          "category": "pwn",
+          "title": "pwn exploitation hints",
+          "detail": "/bin/sh, mprotect",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_shell.bin",
+          "value": null,
+          "metadata": {
+            "markers": [
+              "/bin/sh",
+              "mprotect"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 40.0,
+          "category": "reversing",
+          "title": "pwn/reversing API hints",
+          "detail": "scanf, system",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_shell.bin",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "scanf",
+              "system"
+            ],
+            "prompt_keywords": [
+              "pwn",
+              "system"
+            ]
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "pwn",
+          "title": "ELF binary",
+          "detail": "Run checksec/gdb/radare2 locally for NX/PIE/RELRO/canary and control-flow analysis.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_shell.bin",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "ELF executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_shell.bin",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.30 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_shell.bin",
+          "value": null,
+          "metadata": {
+            "entropy": 3.296,
+            "size": 54
+          }
+        }
+      ]
+    },
+    {
+      "category": "pwn",
+      "name": "pwn_overflow.bin",
+      "prompt": "pwn buffer overflow",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {},
+      "top_findings": [
+        {
+          "score": 59.0,
+          "category": "pwn",
+          "title": "pwn dangerous functions",
+          "detail": "strcpy, sprintf",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_overflow.bin",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "strcpy",
+              "sprintf"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 37.0,
+          "category": "reversing",
+          "title": "pwn/reversing API hints",
+          "detail": "strcpy, sprintf",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_overflow.bin",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "strcpy",
+              "sprintf"
+            ],
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 35.0,
+          "category": "forensics",
+          "title": "interesting string: password",
+          "detail": "Wrong password",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_overflow.bin",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 32.0,
+          "category": "pwn",
+          "title": "ELF binary",
+          "detail": "Run checksec/gdb/radare2 locally for NX/PIE/RELRO/canary and control-flow analysis.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_overflow.bin",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 28.0,
+          "category": "reversing",
+          "title": "program prompt strings",
+          "detail": "Wrong password",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_overflow.bin",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "ELF executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_overflow.bin",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.33 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_overflow.bin",
+          "value": null,
+          "metadata": {
+            "entropy": 3.333,
+            "size": 54
+          }
+        }
+      ]
+    },
+    {
+      "category": "pwn",
+      "name": "pwn_mmap.bin",
+      "prompt": "pwn mmap rop",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {},
+      "top_findings": [
+        {
+          "score": 74.0,
+          "category": "pwn",
+          "title": "pwn target candidate",
+          "detail": "Potential exploit target: ROP",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_mmap.bin",
+          "value": "ROP",
+          "metadata": {
+            "marker": "ROP",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn",
+              "rop"
+            ]
+          }
+        },
+        {
+          "score": 74.0,
+          "category": "pwn",
+          "title": "pwn target candidate",
+          "detail": "Potential exploit target: mmap",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_mmap.bin",
+          "value": "mmap",
+          "metadata": {
+            "marker": "mmap",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "mmap",
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 71.0,
+          "category": "pwn",
+          "title": "pwn target candidate",
+          "detail": "Potential exploit target: mprotect",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_mmap.bin",
+          "value": "mprotect",
+          "metadata": {
+            "marker": "mprotect",
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "pwn"
+            ]
+          }
+        },
+        {
+          "score": 61.0,
+          "category": "pwn",
+          "title": "pwn exploitation hints",
+          "detail": "ROP, mprotect, mmap",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_mmap.bin",
+          "value": null,
+          "metadata": {
+            "markers": [
+              "ROP",
+              "mprotect",
+              "mmap"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "mmap",
+              "pwn",
+              "rop"
+            ]
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "pwn",
+          "title": "ELF binary",
+          "detail": "Run checksec/gdb/radare2 locally for NX/PIE/RELRO/canary and control-flow analysis.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_mmap.bin",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "ELF executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_mmap.bin",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 11.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.15 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\pwn\\pwn_mmap.bin",
+          "value": null,
+          "metadata": {
+            "entropy": 3.152,
+            "size": 48,
+            "prompt_keywords": [
+              "rop"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "category": "reversing",
+      "name": "rev_plain.exe",
+      "prompt": "reversing password flag format: REV{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "REV{plain_rev_ctf}": 1
+      },
+      "top_findings": [
+        {
+          "score": 103.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "REV{plain_rev_ctf}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_plain.exe",
+          "value": "REV{plain_rev_ctf}",
+          "metadata": {
+            "prompt_keywords": [
+              "rev"
+            ]
+          }
+        },
+        {
+          "score": 94.0,
+          "category": "reversing",
+          "title": "password candidate",
+          "detail": "Possible input/credential string: REV{plain_rev_ctf}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_plain.exe",
+          "value": "REV{plain_rev_ctf}",
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "password",
+              "rev"
+            ]
+          }
+        },
+        {
+          "score": 41.0,
+          "category": "reversing",
+          "title": "program prompt strings",
+          "detail": "Enter password: | Wrong password",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_plain.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "password"
+            ]
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "forensics",
+          "title": "interesting string: password",
+          "detail": "Enter password: | Wrong password",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_plain.exe",
+          "value": null,
+          "metadata": {
+            "prompt_keywords": [
+              "password"
+            ]
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "reversing",
+          "title": "PE binary",
+          "detail": "Windows PE detected; inspect imports, resources, and strings in a disassembler.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_plain.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PE executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_plain.exe",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.18 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_plain.exe",
+          "value": null,
+          "metadata": {
+            "entropy": 3.18,
+            "size": 102
+          }
+        }
+      ]
+    },
+    {
+      "category": "reversing",
+      "name": "rev_wide.exe",
+      "prompt": "reversing unicode flag format: REV{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "REV{wide_rev_ctf}": 1
+      },
+      "top_findings": [
+        {
+          "score": 99.0,
+          "category": "forensics",
+          "title": "flag in strings",
+          "detail": "REV{wide_rev_ctf}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_wide.exe",
+          "value": "REV{wide_rev_ctf}",
+          "metadata": {
+            "prompt_keywords": [
+              "rev"
+            ]
+          }
+        },
+        {
+          "score": 41.0,
+          "category": "reversing",
+          "title": "program prompt strings",
+          "detail": "Correct REV{wide_rev_ctf}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_wide.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "rev"
+            ]
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "reversing",
+          "title": "PE binary",
+          "detail": "Windows PE detected; inspect imports, resources, and strings in a disassembler.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_wide.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PE executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_wide.exe",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 2.25 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_wide.exe",
+          "value": null,
+          "metadata": {
+            "entropy": 2.25,
+            "size": 84
+          }
+        }
+      ]
+    },
+    {
+      "category": "reversing",
+      "name": "rev_xor.exe",
+      "prompt": "reversing xor flag format: REV{}",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {
+        "REV{xor_rev_ctf}": 1
+      },
+      "top_findings": [
+        {
+          "score": 88.0,
+          "category": "crypto",
+          "title": "single-byte XOR candidate",
+          "detail": "ny########################REV{xor_rev_ctf}",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_xor.exe",
+          "value": "REV{xor_rev_ctf}",
+          "metadata": {
+            "key_hex": "0x23",
+            "offset": 0,
+            "flags": [
+              "REV{xor_rev_ctf}"
+            ],
+            "prompt_keywords": [
+              "rev",
+              "xor"
+            ]
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "reversing",
+          "title": "PE binary",
+          "detail": "Windows PE detected; inspect imports, resources, and strings in a disassembler.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_xor.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PE executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_xor.exe",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 2.68 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_xor.exe",
+          "value": null,
+          "metadata": {
+            "entropy": 2.677,
+            "size": 42
+          }
+        }
+      ]
+    },
+    {
+      "category": "reversing",
+      "name": "rev_packed.exe",
+      "prompt": "reversing packed upx",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {},
+      "top_findings": [
+        {
+          "score": 62.0,
+          "category": "reversing",
+          "title": "credential candidate",
+          "detail": "Possible input/credential string: serial",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_packed.exe",
+          "value": "serial",
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 53.0,
+          "category": "reversing",
+          "title": "packer hint",
+          "detail": "Found UPX0; unpacking may be required.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_packed.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "upx"
+            ]
+          }
+        },
+        {
+          "score": 53.0,
+          "category": "reversing",
+          "title": "packer hint",
+          "detail": "Found UPX1; unpacking may be required.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_packed.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "upx"
+            ]
+          }
+        },
+        {
+          "score": 47.0,
+          "category": "reversing",
+          "title": "pwn/reversing API hints",
+          "detail": "CreateProcess",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_packed.exe",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "CreateProcess"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "reversing"
+            ]
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "reversing",
+          "title": "program prompt strings",
+          "detail": "license | serial",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_packed.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 32.0,
+          "category": "reversing",
+          "title": "PE binary",
+          "detail": "Windows PE detected; inspect imports, resources, and strings in a disassembler.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_packed.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PE executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_packed.exe",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.98 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_packed.exe",
+          "value": null,
+          "metadata": {
+            "entropy": 3.976,
+            "size": 41
+          }
+        }
+      ]
+    },
+    {
+      "category": "reversing",
+      "name": "rev_api.exe",
+      "prompt": "reversing windows imports",
+      "passed": true,
+      "missing_values": [],
+      "missing_titles": [],
+      "flag_ranks": {},
+      "top_findings": [
+        {
+          "score": 47.0,
+          "category": "reversing",
+          "title": "pwn/reversing API hints",
+          "detail": "WinExec, CreateProcess",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_api.exe",
+          "value": null,
+          "metadata": {
+            "functions": [
+              "WinExec",
+              "CreateProcess"
+            ],
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "reversing"
+            ]
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "reversing",
+          "title": "program prompt strings",
+          "detail": "Enter license:",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_api.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category"
+          }
+        },
+        {
+          "score": 38.0,
+          "category": "reversing",
+          "title": "PE binary",
+          "detail": "Windows PE detected; inspect imports, resources, and strings in a disassembler.",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_api.exe",
+          "value": null,
+          "metadata": {
+            "prompt_boost": "category",
+            "prompt_keywords": [
+              "imports",
+              "windows"
+            ]
+          }
+        },
+        {
+          "score": 25.0,
+          "category": "forensics",
+          "title": "file type",
+          "detail": "PE executable",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_api.exe",
+          "value": null,
+          "metadata": {}
+        },
+        {
+          "score": 8.0,
+          "category": "forensics",
+          "title": "entropy",
+          "detail": "Shannon entropy: 3.36 bits/byte",
+          "source": "E:\\ofntkd\\ctf_auto_solver_bot\\samples\\ctf_like_benchmark\\generated\\reversing\\rev_api.exe",
+          "value": null,
+          "metadata": {
+            "entropy": 3.362,
+            "size": 59
+          }
+        }
+      ]
+    }
+  ]
+}
