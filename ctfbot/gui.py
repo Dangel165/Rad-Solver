@@ -12,6 +12,7 @@ from . import __version__
 from .ai_client import ask_openai
 from .default_prompt import DEFAULT_ANALYSIS_PROMPT
 from .engine import SolverEngine
+from .feedback import record_feedback
 from .models import Target
 from .utils import DEFAULT_FLAG_PATTERNS, read_targets
 
@@ -199,8 +200,10 @@ class CtfBotGui(tk.Tk):
         footer.grid(row=1, column=0, sticky="ew", pady=(10, 0))
         footer.columnconfigure(0, weight=1)
         ttk.Label(footer, textvariable=self.status_var).grid(row=0, column=0, sticky="w")
-        ttk.Button(footer, text="Save JSON", command=self.save_json).grid(row=0, column=1, padx=(8, 0))
-        ttk.Button(footer, text="Clear", command=self.clear).grid(row=0, column=2, padx=(8, 0))
+        ttk.Button(footer, text="Mark Correct", command=lambda: self.mark_feedback(True)).grid(row=0, column=1, padx=(8, 0))
+        ttk.Button(footer, text="Mark Wrong", command=lambda: self.mark_feedback(False)).grid(row=0, column=2, padx=(8, 0))
+        ttk.Button(footer, text="Save JSON", command=self.save_json).grid(row=0, column=3, padx=(8, 0))
+        ttk.Button(footer, text="Clear", command=self.clear).grid(row=0, column=4, padx=(8, 0))
 
     def pick_file(self) -> None:
         path = filedialog.askopenfilename(title="Select CTF challenge file")
@@ -427,6 +430,36 @@ class CtfBotGui(tk.Tk):
         if path:
             Path(path).write_text(json.dumps(self.report, indent=2, ensure_ascii=False), encoding="utf-8")
             self.status_var.set(f"Saved: {path}")
+
+    def mark_feedback(self, correct: bool) -> None:
+        finding = self._selected_finding()
+        if not finding:
+            messagebox.showinfo("No selection", "Select a finding with a value first.")
+            return
+        value = finding.get("value")
+        if not isinstance(value, str) or not value.strip():
+            messagebox.showinfo("No value", "Selected finding has no candidate value.")
+            return
+        title = str(finding.get("title", ""))
+        record_feedback(value.strip(), title, correct)
+        label = "correct" if correct else "wrong"
+        self.status_var.set(f"Marked {label}: {value.strip()}")
+        messagebox.showinfo("Feedback saved", "Feedback saved. Run Scan again to apply the new ranking.")
+
+    def _selected_finding(self) -> dict[str, object] | None:
+        if not self.report:
+            return None
+        selection = self.tree.selection()
+        if not selection:
+            return None
+        findings = self.report.get("findings", [])
+        if not isinstance(findings, list):
+            return None
+        try:
+            finding = findings[int(selection[0])]
+        except (ValueError, IndexError):
+            return None
+        return finding if isinstance(finding, dict) else None
 
     def clear(self) -> None:
         self.tree.delete(*self.tree.get_children())
